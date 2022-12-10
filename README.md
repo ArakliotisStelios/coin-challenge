@@ -17,8 +17,9 @@ As a last part created a the `lineChart` component with the help of **chart.js**
 
 It was a fun challenge and I'm looking forward to discussing it together.  
 
+## 
+##
 
-=======================================================================================================
 
 # Getting Started with Create React App
 
