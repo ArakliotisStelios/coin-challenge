@@ -1,24 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import { QueryClient, QueryClientProvider } from 'react-query'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from './pages/Home';
-import CoinDetails from './pages/CoinDetails';
-import ErrorPage from './pages/ErrorPage';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/Home";
+import CoinDetails from "./pages/CoinDetails";
+import ErrorPage from "./pages/ErrorPage";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-const queryClient = new QueryClient()
+const root = ReactDOM.createRoot(document.getElementById("root"));
+const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Home />,
     errorElement: <ErrorPage />,
   },
   {
@@ -29,8 +25,8 @@ const router = createBrowserRouter([
 
 root.render(
   <React.StrictMode>
-      <QueryClientProvider client={queryClient}>
-    <RouterProvider router={router} />
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
     </QueryClientProvider>
   </React.StrictMode>
 );
