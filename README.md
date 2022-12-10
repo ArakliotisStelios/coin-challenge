@@ -1,3 +1,25 @@
+# A few words about the process
+
+As a first step I downloaded the *create-react-app* in order to have some boilerplate base to work on.
+My first concern was to test the API, check in case of need for extra headers etc. I used the native fetch to the simple `/ping` endpoint.
+I added `mode: "cors"` as an extra option parameter to avoid cors error. 
+
+After a successful request from `coins/market`, my next step was to show the data properly. I decided to use a table and along with the pagination requirement I thought I need some library with ready components.
+
+I am experienced with a lot UI libraries, but for rapid development I decided to use **material UI**.
+Later on, after I had successfully presented the data on a table and with a working pagination, I moved to the **details page**.
+
+A routing mechanism had to be imported and I installed the go-to solution react-router-dom. I created the page and started to play with the data from the endpoint. I assumed that almost all the data are dynamic, that is why I added checks before showing.
+
+ Utilized the Card component and Grid System to show the details. I had in mind the responsiveness of the app, but to be honest I did not spend too much time around an astonishing UI because I think the challenge is more functionality wise.
+
+As a last part created a the `lineChart` component with the help of **chart.js** and **react-chartjs-2** libraries. Created the fetcher function, then casted the data to the appropriate format to inject it to the chart and finally added the number of days to the select component.
+
+It was a fun challenge and I'm looking forward to discussing it together.  
+
+
+=======================================================================================================
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
