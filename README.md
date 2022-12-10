@@ -3,13 +3,14 @@
 As a first step I downloaded the *create-react-app* in order to have some boilerplate base to work on.
 My first concern was to test the API, check in case of need for extra headers etc. I used the native fetch to the simple `/ping` endpoint.
 I added `mode: "cors"` as an extra option parameter to avoid cors error. 
+Sticking with simple fetch functions will do the job, but I decided to use **react-query** fore better data handling and out of the box caching techniques.
 
 After a successful request from `coins/market`, my next step was to show the data properly. I decided to use a table and along with the pagination requirement I thought I need some library with ready components.
 
 I am experienced with a lot UI libraries, but for rapid development I decided to use **material UI**.
 Later on, after I had successfully presented the data on a table and with a working pagination, I moved to the **details page**.
 
-A routing mechanism had to be imported and I installed the go-to solution react-router-dom. I created the page and started to play with the data from the endpoint. I assumed that almost all the data are dynamic, that is why I added checks before showing.
+A routing mechanism had to be imported and I installed the go-to solution **react-router-dom**. I created the page and started to play with the data from the endpoint. I assumed that almost all the data are dynamic, that is why I added checks before showing.
 
  Utilized the Card component and Grid System to show the details. I had in mind the responsiveness of the app, but to be honest I did not spend too much time around an astonishing UI because I think the challenge is more functionality wise.
 
